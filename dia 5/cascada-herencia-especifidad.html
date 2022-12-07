@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascada, herencia, especificidad</title>
+    <style>
+
+        *{/*SELECIONA TODAS LAS ETIQUETAS Y LAS RESETEA A 0*/
+            margin: 0;
+            padding: 0;
+        }
+        /* cascada - como se declara luegod e una declaracion existente, 'la pisa'*/
+        h1{
+            
+            color: red;
+            font-size: 50px;
+        }
+        h1{
+            color: blue;/*pisa al color anterior*/
+        }
+        /* herencia */
+        div {
+            color: rgb(204, 8, 8);/*todos los hijos van heredar este calor*/
+        }
+
+        div p{
+            color: initial; /*initial es un valor presente en todas las etiquetas y se
+            refiere a indicarle a su padre que NO quiere heredar tal propiedad */
+        }
+        div a{
+            color: inherit;/*inherit es un valor presente en TODAS las etiquetas
+            y se refiere a FORZAR LA HERRENRENCIA*/
+        }
+        /*Especificidad*/ 
+        #titulo { /*1,0,0*/
+            color: yellow;
+        }
+        .titulo.a2.a3{ /*0,1,0*/
+            color: green;
+        }
+
+        h1{/*0,0,1*/
+            color: red !important;/*casos especiales para marcar algo que debe de quedar ya*/
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 id="titulo" class="titulo" style="color: gray;">Titulo</h1>
+    <div>
+        <h2>Subtitulo</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, explicabo!</p>
+        <h3>otro subtitulo</h3>
+        <a href="https://google.com">Ver enlace</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases e ids</title>
+    <style>
+        header .logo {
+            border: 1px solid red;
+
+        }
+
+
+        /* Clases ( se crean con un punto adelante,
+        y le puedo poner CASI cuaalquier nombre)
+        - se puede repetir uso class, se puede combinar
+        */
+        .destacado {
+            /*Peso de la fuente */
+            font-weight: bold;
+            /* negrita */
+
+            color: red;
+        }
+
+        .cambiarFondo {
+            background-color: rgb(226, 132, 226);
+
+        }
+
+        .masVendidos img{
+            /*esquinas redondeadas*/ 
+            border-radius: 10px
+        }
+
+        /* IDS  -son para indicar nombres a ciertas agrupaciones
+        de etiquetas o arle nombre a una etiqueta especifica
+        
+        NO SE PUEDE REPETIR SU USO 
+        NO SE PUEDE COMBINAR*/
+
+        #productos h2 {
+            /*Familia tipografica*/
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        #productos {
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://picsum.photos/50/65" alt="" class="logo">
+        <nav>
+            <ul>
+                <!--Enlaces internos-->
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#servicios">Servicioss</a></li>
+            </ul>
+        </nav>
+        </head>
+
+        <section id="productos">
+            <h2>Productos</h2>
+            <p>Lorem <span class="destacado cambiarFondo">psum, dolor sit amet consectetur adipisicing
+                </span> i elit.
+                Eum, perferendis?</p>
+            <div class="masVendidos">
+                <img src="https://picsum.photos/100" alt="">
+                <img src="https://picsum.photos/100" alt="">
+                <img src="https://picsum.photos/100" alt="">
+
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, alias blanditiis officiis officia
+                itaque minus. Alias voluptatum ipsam impedit voluptates dignissimos maiores saepe incidunt? Iusto totam
+                ipsa accusantium asperiores porro placeat, illo aperiam provident debitis in corrupti distinctio dicta
+                quidem eos mollitia ex neque eaque. Ad corrupti dolores laboriosam repellat aliquid, esse at natus
+                officiis, eius porro doloribus. Ipsa ex eos optio sapiente sunt. Tempore perferendis porro dignissimos
+                laudantium, omnis ratione at qui id beatae sint recusandae molestiae nostrum voluptas temporibus ab
+                esse! Temporibus a eveniet officiis sint reprehenderit nesciunt quae veritatis, non, obcaecati dicta cum
+                ut minus tenetur soluta.</p>
+        </section>
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <p>Lorem <span class="destacado cambiarFondo">psum, dolor sit amet consectetur adipisicing</span> i elit.
+                Eum, perferendis?</p>
+            <div class="masVendidos">
+                <img src="https://picsum.photos/100" alt="">
+                <img src="https://picsum.photos/100" alt="">
+                <img src="https://picsum.photos/100" alt="">
+
+            </div>
+        </section>
+</body>
+
+</html>

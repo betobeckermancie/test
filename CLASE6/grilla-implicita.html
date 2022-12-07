@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 30% 70%;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:
+            "encabezado encabezado"
+            "navegacion principal"
+            "navegacion pie"
+            ;            
+        }
+        header{
+            background: yellowgreen;
+            grid-area: encabezado;
+        }
+
+        nav {
+            background: yellow;
+            grid-area: navegacion;
+        }
+
+        main {
+            background: blue;
+            grid-area: principal;
+        }
+
+        footer{
+            background: pink;
+            grid-area: pie;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            encabezado
+        </header>
+        <nav>
+            <ul>
+                <li><a href="">Item 1</a> </li>
+                <li><a href="">Item 2</a></li>
+                <li><a href="">Item 3</a></li>
+            </ul>
+        </nav>
+        <main>
+            Contenido principal
+        </main>
+
+        <footer>
+            <a>Pie de pagina</a>
+    </div>
+</body>
+</html>

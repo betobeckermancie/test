@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }/*mobile first*/
+        #productos {
+            display: flex;
+            flex: wrap;
+            gap: 10px;
+        }
+        #product div {
+            flex-grow: 1;
+            flex-basis: 100%;
+            border: solid 1px ;
+            padding: 10px;
+
+            margin: 0 1%;
+        }
+
+        @media (min-width: 300px) {
+            #productos {
+                flex-basis: 50%;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            #productos div{
+                flex-basis: 25%;
+            }
+        }
+    </style>
+
+    </style>
+</head>
+<body>
+    <section id="productos">
+        <div>col 1</div>
+        <div>col 2</div>
+        <div>col 3</div>
+        <div>col 4</div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            
+            width: 150px;
+            /*transition: transform .5s, width .3s; /*propiedad y duracion*/
+            transition: all .5s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            width: 200px;
+
+        }
+        img:hover {/*cuando pase el mouse por encima aplica las sig propiedades*/
+            transform: scale(1.5);
+            width: 200px;
+        }
+
+        h2 {
+            transition: all 2s linear 1s;
+            text-align: center;
+        }
+
+        h2:hover{
+            transform: rotate(20deg); /*deg = grgados*/
+            color: red;
+            cursor: pointer;
+        }
+
+        input [type="checkbox"]{
+            width: 100px;
+            height: 100px;
+
+            transition: all 1s;
+        }
+
+        input.checkbox:checked{/*cuando se CHEQUE, aplicara las siguientes propiedades y valores*/
+            width: 100px;
+            height: 100px;
+
+        }
+        input.texto{
+            transition: all, 8s
+        }
+        input.texto:focus {
+            background: rgb(136, 255, 107);
+            font-size: 20px;
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <h2>Productos</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, cupiditate?</p>
+            <!--ejemplo aqui-->
+            <img src="https://picsum.photos/100" alt="">
+        </div>
+    </section>
+    <form>
+        <input type="checkbox" class="checkbox">
+        <input type="text" class="texto">
+    </form>
+    
+</body>
+</html>
